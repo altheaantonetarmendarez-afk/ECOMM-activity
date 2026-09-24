@@ -1,0 +1,86 @@
+
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+*{
+   font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+ }
+ body {
+  margin: 0;
+  padding: 40px 40px;
+  background: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+ 
+.product-card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 820px;
+  padding: 24px;
+  background: rgb(237, 236, 234);
+  border-radius: 12 px;
+  box-shadow: 0 8px 30px rgba(11, 19, 37, 0.03);
+}
+ 
+.product-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+ 
+.product-details h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 500 ;
+}
+ 
+.price {
+  margin: 0 0 16px;
+  font-size: 22px;     
+  font-weight: 300;
+  color: #181423;
+}
+ 
+.description {
+  margin: 0 0 22px;
+  color: #5c6269;
+  font-weight: 300;
+}
+
+.buy-btn {
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: light;
+  cursor: pointer;
+  transition: 0.2s;
+}
+ 
+.buy-btn:hover {
+  color: rgb(43, 34, 34);
+  background: #f4f2f1;
+  transform: scale(1.02);
+}
+ 
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+  }
+ 
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+ 
+  .buy-btn {
+    width: 100%;
+  }
+}
+ 
